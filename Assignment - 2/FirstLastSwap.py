@@ -7,7 +7,7 @@ def myfunc(List1):
     t = List1[0]
     List1[0] = List1[length -1]
     List1[length-1] = t
-    print("\nList After Interchanging First and Last List Elements", List1)
+    print("\n List After Interchanging First and Last List Elements", List1)
 
 List1=[1,3,5,7,9]
 myfunc(List1)
