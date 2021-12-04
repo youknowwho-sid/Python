@@ -22,7 +22,7 @@ def myfunc():
     i = length - 1
     str2=""
     while (i>-1):
-        str2 = str1[i] + str2
+        str2 =  str2 + str1[i] 
         i = i - 1
     if str1 == str2:
         print("\nString is Palindrome")
