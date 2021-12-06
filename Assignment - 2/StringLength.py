@@ -30,5 +30,5 @@ def main():
     print("\nLength of String Using For-Loop Iteration: ",fun2(s1))
     print("\nLength of String Using String SLicing",fun3(s1))
     print("\nLength of String Using join() and count(): ",fun4(s1))
-
+    print()
 main()
