@@ -10,4 +10,4 @@ def myfunc():
             sum += 1/i                      #adding if denominator is odd
         i += 1
     print("Sum =",sum)
-myfunc()
+myfunc() 

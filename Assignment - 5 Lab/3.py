@@ -15,4 +15,4 @@ def add(A,B):
             return(s)
 a = 7                                       #inputs
 b = 4
-add(a,b)
+add(a,b) 

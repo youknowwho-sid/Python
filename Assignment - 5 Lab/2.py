@@ -10,4 +10,4 @@ def myfunc():
             a.append(a[n-1] + n)
         print(a[n-1])
         n += 1
-myfunc()
+myfunc() 
