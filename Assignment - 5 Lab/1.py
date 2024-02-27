@@ -2,7 +2,7 @@
 #Program to convert registration number to binary, octal and hexadecimal
 def binary(a):
     b = 0                           #binary variable
-    c = 0                           #counter
+    c = 0                           #counter 
     t = a                        #temp variable to hold input
     while(t > 0):
         b += ((t%2)*(10**c))
