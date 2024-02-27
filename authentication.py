@@ -3,10 +3,10 @@ from googleapiclient.discovery import build
 from google.auth.transport.requests import Request
 
 # Set your API key
-api_key = 'AIzaSyDsw4hYqx0_Mh_gXqvng5KdCroa56qzpLI'
+api_key = '' 
 
 # Set the path to your client secrets JSON file
-client_secrets_file = 'C:/Users/sidja/Downloads/client_secrets.json'
+client_secrets_file = ''
 
 # Set the API service name and version
 api_service_name = 'youtubeAnalytics'
@@ -20,7 +20,7 @@ flow = InstalledAppFlow.from_client_secrets_file(client_secrets_file, scopes=sco
 credentials = flow.run_local_server(port=8080)
 
 # Save the credentials for later use
-with open('C:/Users/sidja/Downloads/token.json', 'w') as token:
+with open('', 'w') as token:
     token.write(credentials.to_json())
 
 # Create a YouTube Analytics API service
@@ -28,7 +28,7 @@ youtube_analytics = build(api_service_name, api_version, credentials=credentials
 
 # Example: Get the number of views for a specific video
 response = youtube_analytics.reports().query(
-    ids=f'channel==UCfdPxIRYf1YdhCda_q-goNQ',
+    ids=f'', #Set Channel ID 
     startDate='2023-01-01',
     endDate='2023-01-31',
     metrics='views'
