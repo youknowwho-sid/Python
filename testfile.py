@@ -7,7 +7,7 @@ import datetime
 api_service_name = 'youtubeAnalytics'
 api_version = 'v2'
 
-token_file_path = 'C:/Users/sidja/Downloads/token.json'  
+token_file_path = ''  #Set file path
 with open(token_file_path, 'r') as token_file:
     credentials_data = json.load(token_file)
     credentials = Credentials.from_authorized_user_info(credentials_data)
@@ -16,7 +16,7 @@ with open(token_file_path, 'r') as token_file:
 youtube_analytics = build(api_service_name, api_version, credentials=credentials)
 
 response = youtube_analytics.reports().query(
-    ids=f'channel==UCfdPxIRYf1YdhCda_q-goNQ',
+    ids=f'', #Set channel ID
     startDate='2023-01-01',
     endDate='2023-01-31',
     metrics='views,likes,dislikes,shares,comments',
