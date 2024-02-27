@@ -6,7 +6,7 @@ def add(A,B):
         if (sum!=None):
             print("Sum =",sum)
     else:
-        i = 1
+        i = 1 
         s = 0
         if (A!= None):
             while(i<=A):                    #calculating sum
