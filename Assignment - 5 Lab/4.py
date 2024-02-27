@@ -8,7 +8,7 @@ def myfunc():
         fact = 1                            #calcuting factorial
         while(j<=i):
             fact *= j
-            j += 1
+            j += 1 
         sum += i/fact                       #calculating sum
         i += 1
     print("Sum =",sum)
