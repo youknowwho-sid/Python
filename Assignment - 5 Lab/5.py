@@ -4,7 +4,7 @@ def myfunc():
     i = 1 
     sum = 0
     while(i<=y):
-        if(i%2 == 0):
+        if(i%2 == 0): 
             sum -= 1/i                      #subtracting if denominator is even
         else:
             sum += 1/i                      #adding if denominator is odd
